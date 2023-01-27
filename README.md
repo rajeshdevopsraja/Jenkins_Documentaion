@@ -25,7 +25,8 @@ java default path : /usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64/
    16  sudo systemctl start jenkins
    17  sudo systemctl status jenkins
    18  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-   19  
+   19  sudo vi /etc/sudoers
+   20  jenkins ALL=(ALL)       NOPASSWD: ALL
 
   
   
